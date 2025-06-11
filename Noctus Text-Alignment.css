@@ -1,0 +1,319 @@
+/*-----------------------------------------------------------------------------------
+                        Modular Text-Aligments V1.0 by DarkG
+                        Contact: darkgdg0777@gmail.com
+                        License: MIT
+-----------------------------------------------------------------------------------*/
+                        /* - Part of the Modular Snippets - */
+/*---------------------------------------------------------------------------------*/
+
+/* NOTE:
+    Right/Left-Aligned Images are not implemented yet.
+    Unordered/Ordered Lists' Bullet Points stay on the left as of now.
+    .center-callout is not functional as of now.
+*/
+                              
+/* ---------------------------------- Centered-Alignment ---------------------------------- */
+
+/* Naming Convention for the classes: 
+[Descriptor]-[Affected Element] = center-img or right-h3
+"x" can stand for any number, "hx" addresses every heading. */
+
+/* Centered Text */
+.center-p p {
+    text-align: center;
+  }
+  
+/* Centered Images */
+.center-img img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Centered table body and table headers */
+.center-th th,
+.center-td td {
+    text-align: center !important;
+}
+
+/* Centered Unordered Lists */
+.center-ul ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
+/* Centered Ordered Lists */
+.center-ol ol {
+    text-align: center;
+}
+  
+/* All Headlines Centered */
+.center-hx :is(h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.HyperMD-header.HyperMD-header-1,
+.HyperMD-header.HyperMD-header-2,
+.HyperMD-header.HyperMD-header-3,
+.HyperMD-header.HyperMD-header-4,
+.HyperMD-header.HyperMD-header-5,
+.HyperMD-header.HyperMD-header-6) {
+    text-align: center;
+}
+  
+/* Centered Headline 1 */
+.center-h1 :is(h1,
+.HyperMD-header.HyperMD-header-1) {
+    text-align: center;
+}
+  
+/* Centered Headline 2 */
+.center-h2 :is(h2,
+.HyperMD-header.HyperMD-header-2) {
+    text-align: center;
+} 
+  
+/* Centered Headline 3 */
+.center-h3 :is(h3,
+.HyperMD-header.HyperMD-header-3) {
+    text-align: center;
+}
+  
+/* Centered Headline 4 */
+.center-h4 :is(h4,
+.HyperMD-header.HyperMD-header-4) {
+    text-align: center;
+}
+  
+/* Centered Headline 5 */
+.center-h5 :is(h5,
+.HyperMD-header.HyperMD-header-5) {
+    text-align: center;
+}
+  
+/* Centered Headline 6 */
+.center-h6 :is(h6,
+.HyperMD-header.HyperMD-header-6) {
+    text-align: center;
+}
+
+.center-callout :is(.callout, .callout.callout-title) {
+    text-align: center;
+}
+  
+/* ---------------------------------- Right-Alignment ---------------------------------- */
+
+/* Right-Aligned Text */
+.right-p p,
+.rtl-p p {
+    text-align: right;
+}
+  
+/* Right-Aligned table body and table headers */
+.right-th th,
+.right-td td,
+.rtl-th th,
+.rtl-td td {
+    text-align: right !important;
+}
+  
+/* Right-Aligned Unordered Lists */
+.right-ul ul,
+.rtl-ul ul {
+    text-align: right;
+    list-style-position: inside;
+}
+  
+/* Right-Aligned Ordered Lists */
+.right-ol ol,
+.rtl-ol ol {
+    text-align: right;
+}
+  
+/* All Headlines Right-Aligned */
+.right-hx :is(h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.HyperMD-header.HyperMD-header-1,
+.HyperMD-header.HyperMD-header-2,
+.HyperMD-header.HyperMD-header-3,
+.HyperMD-header.HyperMD-header-4,
+.HyperMD-header.HyperMD-header-5,
+.HyperMD-header.HyperMD-header-6),
+.rtl-hx :is(h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.HyperMD-header.HyperMD-header-1,
+.HyperMD-header.HyperMD-header-2,
+.HyperMD-header.HyperMD-header-3,
+.HyperMD-header.HyperMD-header-4,
+.HyperMD-header.HyperMD-header-5,
+.HyperMD-header.HyperMD-header-6) {
+    text-align: right;
+}
+  
+/* Right-Aligned Headline 1 */
+.right-h1 :is(h1,
+.HyperMD-header.HyperMD-header-1),
+.rtl-h1 :is(h1,
+.HyperMD-header.HyperMD-header-1) {
+    text-align: right;
+}
+  
+/* Right-Aligned Headline 2 */
+.right-h2 :is(h2,
+.HyperMD-header.HyperMD-header-2),
+.rtl-h2 :is(h2,
+.HyperMD-header.HyperMD-header-2) {
+    text-align: right;
+}
+  
+/* Right-Aligned Headline 3 */
+.right-h3 :is(h3,
+.HyperMD-header.HyperMD-header-3),
+.rtl-h3 :is(h3,
+.HyperMD-header.HyperMD-header-3) {
+    text-align: right;
+}
+  
+/* Right-Aligned Headline 4 */
+.right-h4 :is(h4,
+.HyperMD-header.HyperMD-header-4),
+.rtl-h4 :is(h4,
+.HyperMD-header.HyperMD-header-4) {
+    text-align: right;
+}
+  
+/* Right-Aligned Headline 5 */
+.right-h5 :is(h5,
+.HyperMD-header.HyperMD-header-5),
+.rtl-h5 :is(h5,
+.HyperMD-header.HyperMD-header-5) {
+    text-align: right;
+}
+  
+/* Right-Aligned Headline 6 */
+.right-h6 :is(h6,
+.HyperMD-header.HyperMD-header-6),
+.rtl-h6 :is(h6,
+.HyperMD-header.HyperMD-header-6) {
+    text-align: right;
+}
+  
+/* ---------------------------------- Left-Alignment ---------------------------------- */
+
+/* Use case if the standard is set to centered and you may want some elements to be aligned left */
+
+/* Left-Aligned Text */
+.left-p p,
+.ltr-p p {
+    text-align: left;
+}
+  
+/* Left-Aligned table body and table headers */
+.left-th th,
+.left-td td,
+.ltr-th th,
+.ltr-td td {
+    text-align: left !important;
+  }
+  
+/* Left-Aligned Unordered Lists */
+.left-ul ul,
+.ltr-ul ul {
+    text-align: left;
+    list-style-position: inside;
+}
+  
+/* Left-Aligned Ordered Lists */
+.left-ol ol,
+.ltr-ol ol {
+    text-align: left;
+}
+  
+/* All Headlines Left-Aligned */
+.left-hx :is(h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.HyperMD-header.HyperMD-header-1,
+.HyperMD-header.HyperMD-header-2,
+.HyperMD-header.HyperMD-header-3,
+.HyperMD-header.HyperMD-header-4,
+.HyperMD-header.HyperMD-header-5,
+.HyperMD-header.HyperMD-header-6),
+.ltr-hx :is(h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.HyperMD-header.HyperMD-header-1,
+.HyperMD-header.HyperMD-header-2,
+.HyperMD-header.HyperMD-header-3,
+.HyperMD-header.HyperMD-header-4,
+.HyperMD-header.HyperMD-header-5,
+.HyperMD-header.HyperMD-header-6) {
+    text-align: left;
+}
+  
+/* Left-Aligned Headline 1 */
+.left-h1 :is(h1,
+.HyperMD-header.HyperMD-header-1),
+.ltr-h1 :is(h1,
+.HyperMD-header.HyperMD-header-1) {
+    text-align: left;
+}
+  
+/* Left-Aligned Headline 2 */
+.left-h2 :is(h2,
+.HyperMD-header.HyperMD-header-2),
+.ltr-h2 :is(h2,
+.HyperMD-header.HyperMD-header-2) {
+    text-align: left;
+}
+  
+/* Left-Aligned Headline 3 */
+.left-h3 :is(h3,
+.HyperMD-header.HyperMD-header-3),
+.lt-h3 :is(h3,
+.HyperMD-header.HyperMD-header-3) {
+    text-align: left;
+}
+  
+/* Left-Aligned Headline 4 */
+.left-h4 :is(h4,
+.HyperMD-header.HyperMD-header-4),
+.ltr-h4 :is(h4,
+.HyperMD-header.HyperMD-header-4) {
+    text-align: left;
+}
+  
+/* Left-Aligned Headline 5 */
+.left-h5 :is(h5,
+.HyperMD-header.HyperMD-header-5),
+.ltr-h5 :is(h5,
+.HyperMD-header.HyperMD-header-5) {
+    text-align: left;
+}
+  
+/* Left-Aligned Headline 6 */
+.left-h6 :is(h6,
+.HyperMD-header.HyperMD-header-6),
+.ltr-h6 :is(h6,
+.HyperMD-header.HyperMD-header-6) {
+    text-align: left;
+}
+  
+/* ---------------------------------- END OF DOCUMENT ---------------------------------- */
+   

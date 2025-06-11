@@ -1,0 +1,11 @@
+div.callout:is([data-callout*="multi-column"], [data-callout*="blank-container"]) {
+    p:first-of-type {
+    margin-top: 0em;
+    }
+    :is(ol, ul):first-of-type {
+    margin-top: 0.2em;
+    }
+    div.callout:is([data-callout*="anchor"], [data-callout*="invisible"]):first-child {
+        margin-left: 0.5em;
+    }
+}

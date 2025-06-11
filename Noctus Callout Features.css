@@ -1,0 +1,28 @@
+/*-----------------------------------------------------------------------------------
+                        Modular Callouts - Features V0.1 by DarkG
+                        Contact: darkgdg0777@gmail.com
+                        License: MIT
+-----------------------------------------------------------------------------------*/
+                        /* - Part of the Modular Snippets - */
+/*---------------------------------------------------------------------------------*/
+
+/* NOTE: */ 
+/* This snippet uses "data-callout-metadata" instead of "data-callout" as it is about functions and 
+the way a callout behaves and not about how it looks. */ 
+
+/* ---------------------------------- SCROLLING FEATURES ---------------------------------- */
+
+/* Does not work with float Callouts */
+
+div[data-callout-metadata*="no-title"].callout > .callout-title .callout-icon { display: none; }
+
+div[data-callout-metadata*="no-title"].callout > .callout-title .callout-title-inner { display: none; }
+
+.callout[data-callout-metadata*="scroll"] .callout-content { overflow: scroll; }
+
+.callout[data-callout-metadata*="15vh"] .callout-content { max-height: 15vh; }
+
+.callout[data-callout-metadata*="30vh"] .callout-content {  max-height: 30vh; } 
+
+/* ---------------------------------- END OF DOCUMENT ---------------------------------- */
+ 

@@ -1,0 +1,49 @@
+/* Info 
+Font Snippet by Shaydelity
+Github: https://github.com/Shaydelity
+Contact: shaydedg@gmail.com
+-----------------------------------*/
+
+.markdown-rendered mark .red,
+.cm-s-obsidian span.cm-formatting-highlight .red,
+.cm-s-obsidian span.cm-highlight .red,
+.search-result-file-matched-text, mark.red {
+  background-color: rgba(var(--darker-red), 0.5);
+  border-top: 1px solid rgba(var(--red), 0.15);
+  border-bottom: 1px solid rgba(var(--red), 1);
+  color: rgba(var(--lightest-red), 1);
+  padding: 0 0.15em;
+  border-radius: 0.1em;
+  border: none;
+  outline: 1px solid rgba(var(--red), 0.85);
+}
+
+.markdown-rendered mark .green,
+.cm-s-obsidian span.cm-formatting-highlight .green,
+.cm-s-obsidian span.cm-highlight .green,
+.search-result-file-matched-text, mark.green {
+  background-color: rgba(var(--darker-green), 0.5);
+  border-top: 1px solid rgba(var(--green), 0.15);
+  border-bottom: 1px solid rgba(var(--green), 1);
+  color: rgba(var(--lightest-green), 1);
+  padding: 0 0.15em;
+  border-radius: 0.1em;
+  border: none;
+  outline: 1px solid rgba(var(--green), 0.85);
+}
+
+.markdown-rendered mark .yellow,
+.cm-s-obsidian span.cm-formatting-highlight .yellow,
+.cm-s-obsidian span.cm-highlight .yellow,
+.search-result-file-matched-text, mark.yellow {
+  background-color: rgba(var(--darker-yellow), 0.5);
+  border-top: 1px solid rgba(var(--yellow), 0.15);
+  border-bottom: 1px solid rgba(var(--yellow), 1);
+  color: rgba(var(--lightest-yellow), 1);
+  padding: 0 0.15em;
+  border-radius: 0.1em;
+  border: none;
+  outline: 1px solid rgba(var(--yellow), 0.85);
+}
+
+/* END OF DOCUMENT */

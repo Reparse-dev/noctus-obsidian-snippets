@@ -1,0 +1,14 @@
+/* LateX Colors
+These colors are shortcuts to specific colors like the fixed colors
+
+
+oklch(0.56 0.231283 29.2339)
+
+div.callout {
+    &[data-callout*=""] {
+    --callout-lightness: var(--white);
+    --callout-chroma: 0.25;
+    --callout-hue: 100;
+    }
+}  
+

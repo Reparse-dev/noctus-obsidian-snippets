@@ -1,0 +1,245 @@
+
+/* Info 
+Font Snippet by Shaydelity
+Github: https://github.com/Shaydelity
+Contact: shaydedg@gmail.com
+------------------------------------
+- Part of the Modular Snippets
+-----------------------------------*/
+
+/* REMADE STANDARDS */
+
+/* Experimental */
+
+p.dw-up::before {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>');
+    margin-right: 8px; /* Adds spacing between the icon and the text */
+    vertical-align: middle; /* Aligns the icon with the text */
+    color: currentColor; /* Inherits text color */
+    display: inline-block;
+}
+
+/* General Dataview Metadata Callout */
+
+.callout[data-callout*="dw-metadata"] {
+    --callout-border-width: 10px;
+    --callout-border-opacity: 1;
+    --callout-title-size: 1em;
+    --callout-color: var(--callout-lightness) var(--callout-chroma) var(--callout-hue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: oklch(0% 0 0 / 0);
+    color: oklch(var(--white) 0 0);
+    border: none;
+    padding: 0px;
+    margin: 0.3em 0em;
+    &>.callout-title {
+        .callout-icon { 
+            display: none; 
+            flex: 0 0 auto;
+            align-items: center;
+            line-height: var(--line-height-tight);
+        }
+        .callout-title-inner { display: none; }
+    }
+    &>.callout-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100%; 
+
+        p {
+            margin: 0px;
+            padding: 0px 4px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        .internal-link { --link-color: var(--callout-accent-color); }
+        .external-link { --link-external-color: var(--callout-accent-color); }
+        .internal-link.is-unresolved {
+            --link-unresolved-color: oklch(var(--super-light) 0 0);
+            --link-unresolved-decoration-color: rgb(var(--callout-text-color));
+            --link-unresolved-opacity: 1;
+            --link-unresolved-decoration-style: none;
+        }
+    }
+}
+
+@media print {
+    div[data-callout*="dw-metadata"].callout {
+        display: none;
+    }
+}
+
+/*
+overflow: hidden;
+border-style: solid;
+border-color: rgba(var(--callout-color), var(--callout-border-opacity));
+border-width: var(--callout-border-width);
+border-radius: var(--callout-radius);
+margin: 1em 0;
+mix-blend-mode: var(--callout-blend-mode);
+background-color: rgba(var(--callout-color), 0.1);
+padding: var(--callout-padding);
+*/
+
+/*
+padding: var(--callout-title-padding);
+display: flex;
+gap: var(--size-4-1);
+font-size: var(--callout-title-size);
+color: rgb(var(--callout-color));
+line-height: var(--line-height-tight);
+align-items: flex-start;
+
+    gap: var(--size-4-1);
+    color: rgb(var(--callout-color));
+    line-height: var(--line-height-tight);
+    align-items: flex-start;
+    text-indent: 1.25em;
+    background-color: var(--callout-color);
+    margin-top: -20px;
+    z-index: 0;
+    width: fit-content;
+    padding: 0 0.5em;
+    margin-left: -0.75em;
+    letter-spacing: 0.05em;
+        padding: var(--callout-title-padding);
+        gap: var(--size-4-1);
+        font-size: var(--callout-title-size);
+        color: rgb(var(--callout-color));
+        line-height: 1em;
+*/
+
+/* Special DW Metadata Callouts */
+
+.callout[data-callout*="dw-metadata-top"] > .callout-content {
+    border-top: solid oklch(var(--white) 0 0 / 0.5);
+    padding-top: 10px;
+}
+
+
+.callout[data-callout="next"] .callout-title .callout-icon {
+    flex: 0 0 auto;
+    align-items: center;
+    line-height: var(--line-height-tight);
+}
+
+.callout[data-callout*="next"] > .callout-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 0em;
+}
+
+
+.callout[data-callout*="next"] .callout-content p {
+    margin: 0px;
+    padding: 0px 4px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.callout[data-callout="next"] .callout-title {
+    background-color: rgba(0,0,0,0);
+    padding: 0em 0em 0em 0em;
+    margin-left: 0em;
+    margin-bottom: -1.9em;
+}
+
+
+.callout[data-callout*="next"] {
+    border: none;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.callout[data-callout*="next"] {
+    --callout-border-width: 1px;
+    --callout-border-opacity: 1;
+    --callout-title-size: 1em;
+    --callout-blend-mode: lighten;
+    --callout-color: var(--white);
+    --callout-text-color: rgb(var(--grey));
+    --callout-accent-color: rgb(var(--light-grey));
+    background-color: rgba(var(--black), 0);
+    color: var(--callout-text-color);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    border-left: 2px solid white;
+    border-radius: 0px;
+    padding: 0em 0em 0em 1em;
+    margin: 0em;
+    overflow: hidden;
+    mix-blend-mode: var(--callout-blend-mode);
+}
+
+
+.callout[data-callout*="next"] > .callout-content { padding-bottom: 7px; }
+
+
+
+div[data-callout*="dw-metadata-next"].callout > .callout-title .callout-icon { display: none; }
+
+div[data-callout*="dw-metadata-next"].callout > .callout-title .callout-title-inner { display: none; }
+
+
+.callout[data-callout*="dw-metadata-next"] {
+    --callout-color: var(--dark-grey);
+    justify-content: center;
+    border: none;
+}
+
+div[data-callout*="next"].callout > .callout-title .callout-title-inner { display: none; }
+
+
+div[data-callout="next"].callout > .callout-title .callout-icon {
+    display: flex;
+    padding-bottom: 0.7em;
+}
+
+
+/* Dataview Property: Previous Callout */
+
+div[data-callout="dw-metadata-previous"].callout > .callout-title {margin:0em; padding:0em; background-color: rgba(0,0,0,0);}
+
+div[data-callout="dw-metadata-previous"].callout > .callout-title .callout-icon { margin-right: -0.1em; margin-bottom: -0.1em;}
+
+div[data-callout="dw-metadata-previous"].callout > .callout-title .callout-icon { display: flex; }
+
+div[data-callout="dw-metadata-previous"].callout { --callout-icon: lucide-chevrons-left; }
+
+div[data-callout="next"].callout { --callout-icon: lucide-chevrons-right; }
+
+/* === Based on https://forum.obsidian.md/t/callouts-without-title/50547 === */
+
+/* v-align icon in center of first line 
+.callout[data-callout*="dw-metadata"] .callout-title .callout-icon {
+    min-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+
+/* Highlight */
+
+div[data-callout="highlight"].callout { --callout-color: var(--lighter-yellow); background-color: rgba(var(--darkest-yellow), 0.2) !important; }
+div[data-callout="highlight"].callout {  margin: 0px; padding: 0px; border: none; color: rgb(var(--lighter-yellow)) }
+div[data-callout="highlight"].callout .callout-content {  margin: 0px; padding: 0px; }
+
+div[data-callout="highlight"].callout > .callout-title { display: none; }
+
+div[data-callout="highlight"].callout > .callout-title .callout-icon { display: none; }
+
+div[data-callout="highlight"].callout > .callout-title .callout-title-inner { display: none; }
+

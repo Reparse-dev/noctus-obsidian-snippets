@@ -1,0 +1,42 @@
+
+/* NEW CHECKLIST STYLES 
+Based on Minimal Theme by @kepano
+GitHub: https://github.com/kepano/obsidian-minimal
+Link: https://twitter.com/kepano
+------------------------------*/
+
+/* Total */
+input[data-task="€"]:checked.task-list-item-checkbox,
+li[data-task="€"]>input:checked, li[data-task="€"]>p>input:checked{
+  display: none;
+}
+li[data-task="€"].task-list-item.is-checked {
+  font-weight: 900;
+  margin-left: 0em;
+  text-decoration: underline;
+  margin-top: 1em;
+}
+.markdown-source-view.mod-cm6 
+.task-list-label input[data-task="€"].task-list-item-checkbox 
+{
+  display: none;
+  padding: 1em;
+  content: "€" !important;
+  top: 0em;
+  vertical-align: middle;
+  margin-inline-start: 0em;
+  margin-inline-end: 0em;
+  width: fit-content;
+  height: fit-content;
+}
+
+.markdown-source-view.mod-cm6 
+.task-list-label:has(.task-list-item-checkbox[data-task="€"])::after {
+  content: "€";
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(232, 230, 227);
+  margin-left: 5px;
+}
+
+/* END OF DOCUMENT */

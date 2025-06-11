@@ -1,0 +1,525 @@
+/*-----------------------------------------------------------------------------------
+                    Modular Typography - Letter-spacing - Special V1.0 by DarkG
+                    Contact: darkgdg0777@gmail.com
+                    License: MIT
+-----------------------------------------------------------------------------------*/
+                    /* - Part of the Modular Snippets - */
+/*---------------------------------------------------------------------------------*/
+
+/* NOTE - IMPORTANT:
+    The syntax for the classes is as follows: [Element]-[AttributeAffected]-[AttributeValue]
+    "-p6px = 'plus 6px' = +6px"
+    "-m6px = 'minus 6px' = -6px"
+
+    Examples:
+    Correct: p-letterspacing-p1px (increases letter-spacing in paragraphs by 1px)
+    Correct: p-letterspacing-m1px (decreases letter-spacing in paragraphs by 1px)
+    Wrong: p-letter-spacing-m1px 
+    Wrong: p-letter-spacing-p1-px
+
+    Other idea would be to use "-m[Value]" which means just "minus [Value]" and "-p[Value]" which means "plus [Value]".
+*/
+
+/* ---------------------------------- General Letter-Spacing: Positive ---------------------------------- */
+
+.letterspacing-p1px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6,
+.markdown-source-view .HyperMD-paragraph .cm-p, .markdown-rendered p) {
+    letter-spacing: 1px;
+}
+
+.letterspacing-p2px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6,
+.markdown-source-view .HyperMD-paragraph .cm-p, .markdown-rendered p) {
+    letter-spacing: 2px;
+}
+
+.letterspacing-p3px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6,
+.markdown-source-view .HyperMD-paragraph .cm-p, .markdown-rendered p) {
+    letter-spacing: 3px;
+}
+
+.letterspacing-p4px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6,
+.markdown-source-view .HyperMD-paragraph .cm-p, .markdown-rendered p) {
+    letter-spacing: 4px;
+}
+
+.letterspacing-p5px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6,
+.markdown-source-view .HyperMD-paragraph .cm-p, .markdown-rendered p, b, strong, em, i) {
+    letter-spacing: 5px;
+}
+
+/* ---------------------------------- General Letter-Spacing: Negative ---------------------------------- */
+
+.letterspacing-m1px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6,
+.markdown-source-view .HyperMD-paragraph .cm-p, .markdown-rendered p) {
+    letter-spacing: -1px;
+}
+
+.letterspacing-pm2px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6,
+.markdown-source-view .HyperMD-paragraph .cm-p, .markdown-rendered p) {
+    letter-spacing: -2px;
+}
+
+.letterspacing-m3px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6,
+.markdown-source-view .HyperMD-paragraph .cm-p, .markdown-rendered p) {
+    letter-spacing: -3px;
+}
+
+.letterspacing-m4px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6,
+.markdown-source-view .HyperMD-paragraph .cm-p, .markdown-rendered p) {
+    letter-spacing: -4px;
+}
+
+.letterspacing-m5px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6,
+.markdown-source-view .HyperMD-paragraph .cm-p, .markdown-rendered p) {
+    letter-spacing: -5px;
+}
+
+/* ---------------------------------- Paragraph Letter-Spacing: Positive ---------------------------------- */
+
+.p-letterspacing-p1px :is(
+.markdown-source-view .HyperMD-paragraph .cm-p, .markdown-rendered p) {
+    letter-spacing: 1px;
+}
+
+.p-letterspacing-p2px :is(
+.markdown-source-view .HyperMD-paragraph .cm-p, .markdown-rendered p) {
+    letter-spacing: 2px;
+}
+
+.p-letterspacing-p3px :is(
+.markdown-source-view .HyperMD-paragraph .cm-p, .markdown-rendered p) {
+    letter-spacing: 3px;
+}
+
+.p-letterspacing-p4px :is(
+.markdown-source-view .HyperMD-paragraph .cm-p, .markdown-rendered p) {
+    letter-spacing: 4px;
+}
+
+.p-letterspacing-p5px :is(
+.markdown-source-view .HyperMD-paragraph .cm-p, .markdown-rendered p) {
+    letter-spacing: 5px;
+}
+
+/* ---------------------------------- Paragraph Letter-Spacing: Negative ---------------------------------- */
+
+.p-letterspacing-m1px :is(
+.markdown-source-view .HyperMD-paragraph .cm-p, .markdown-rendered p) {
+    letter-spacing: -1px;
+}
+
+.p-letterspacing-m2px :is(
+.markdown-source-view .HyperMD-paragraph .cm-p, .markdown-rendered p) {
+    letter-spacing: -2px;
+}
+
+.p-letterspacing-m3px :is(
+.markdown-source-view .HyperMD-paragraph .cm-p, .markdown-rendered p) {
+    letter-spacing: -3px;
+}
+
+.p-letterspacing-m4px :is(
+.markdown-source-view .HyperMD-paragraph .cm-p, .markdown-rendered p) {
+    letter-spacing: -4px;
+}
+
+.p-letterspacing-m5px :is(
+.markdown-source-view .HyperMD-paragraph .cm-p, .markdown-rendered p) {
+    letter-spacing: -5px;
+}
+
+/* ---------------------------------- Header Letter-Spacing: Positive ---------------------------------- */
+
+.hx-letterspacing-p1px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6),
+.h1-letterspacing-p1px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1),
+.h2-letterspacing-p1px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h2),
+.h3-letterspacing-p1px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h3),
+.h4-letterspacing-p1px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h4),
+.h5-letterspacing-p1px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h5),
+.h6-letterspacing-p1px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h6) {
+    letter-spacing: 1px;
+}
+
+.hx-letterspacing-p2px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6),
+.h1-letterspacing-p2px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1),
+.h2-letterspacing-p2px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h2),
+.h3-letterspacing-p2px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h3),
+.h4-letterspacing-p2px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h4),
+.h5-letterspacing-p2px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h5),
+.h6-letterspacing-p2px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h6) {
+    letter-spacing: 2px;
+}
+
+.hx-letterspacing-p3px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6),
+.h1-letterspacing-p3px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1),
+.h2-letterspacing-p3px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h2),
+.h3-letterspacing-p3px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h3),
+.h4-letterspacing-p3px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h4),
+.h5-letterspacing-p3px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h5),
+.h6-letterspacing-p3px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h6) {
+    letter-spacing: 3px;
+}
+
+.hx-letterspacing-p4px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6),
+.h1-letterspacing-p4px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1),
+.h2-letterspacing-p4px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h2),
+.h3-letterspacing-p4px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h3),
+.h4-letterspacing-p4px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h4),
+.h5-letterspacing-p4px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h5),
+.h6-letterspacing-p4px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h6) {
+    letter-spacing: 4px;
+}
+
+.hx-letterspacing-p5px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6),
+.h1-letterspacing-p5px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1),
+.h2-letterspacing-p5px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h2),
+.h3-letterspacing-p5px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h3),
+.h4-letterspacing-p5px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h4),
+.h5-letterspacing-p5px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h5),
+.h6-letterspacing-p5px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h6) {
+    letter-spacing: 5px;
+}
+
+.hx-letterspacing-p6px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6),
+.h1-letterspacing-p6px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1),
+.h2-letterspacing-p6px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h2),
+.h3-letterspacing-p6px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h3),
+.h4-letterspacing-p6px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h4),
+.h5-letterspacing-p6px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h5),
+.h6-letterspacing-p6px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h6) {
+    letter-spacing: 6px;
+}
+
+.hx-letterspacing-p7px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6),
+.h1-letterspacing-p7px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1),
+.h2-letterspacing-p7px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h2),
+.h3-letterspacing-p7px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h3),
+.h4-letterspacing-p7px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h4),
+.h5-letterspacing-p7px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h5),
+.h6-letterspacing-p7px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h6) {
+    letter-spacing: 7px;
+}
+
+.hx-letterspacing-p8px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6),
+.h1-letterspacing-p8px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1),
+.h2-letterspacing-p8px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h2),
+.h3-letterspacing-p8px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h3),
+.h4-letterspacing-p8px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h4),
+.h5-letterspacing-p8px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h5),
+.h6-letterspacing-p8px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h6) {
+    letter-spacing: 8px;
+}
+
+.hx-letterspacing-p9px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6),
+.h1-letterspacing-p9px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1),
+.h2-letterspacing-p9px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h2),
+.h3-letterspacing-p9px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h3),
+.h4-letterspacing-p9px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h4),
+.h5-letterspacing-p9px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h5),
+.h6-letterspacing-p9px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h6) {
+    letter-spacing: 9px;
+}
+
+.hx-letterspacing-p10px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6),
+.h1-letterspacing-p10px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1),
+.h2-letterspacing-p10px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h2),
+.h3-letterspacing-p10px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h3),
+.h4-letterspacing-p10px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h4),
+.h5-letterspacing-p10px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h5),
+.h6-letterspacing-p10px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h6) {
+    letter-spacing: 10px;
+}
+
+/* ---------------------------------- Header Letter-Spacing: Negative ---------------------------------- */
+
+.hx-letterspacing-m1px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6),
+.h1-letterspacing-m1px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1),
+.h2-letterspacing-m1px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h2),
+.h3-letterspacing-m1px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h3),
+.h4-letterspacing-m1px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h4),
+.h5-letterspacing-m1px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h5),
+.h6-letterspacing-m1px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h6) {
+    letter-spacing: -1px;
+}
+
+.hx-letterspacing-m2px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6),
+.h1-letterspacing-m2px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1),
+.h2-letterspacing-m2px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h2),
+.h3-letterspacing-m2px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h3),
+.h4-letterspacing-m2px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h4),
+.h5-letterspacing-m2px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h5),
+.h6-letterspacing-m2px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h6) {
+    letter-spacing: -2px;
+}
+
+.hx-letterspacing-m3px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6),
+.h1-letterspacing-m3px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1),
+.h2-letterspacing-m3px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h2),
+.h3-letterspacing-m3px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h3),
+.h4-letterspacing-m3px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h4),
+.h5-letterspacing-m3px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h5),
+.h6-letterspacing-m3px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h6) {
+    letter-spacing: -3px;
+}
+
+.hx-letterspacing-m4px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6),
+.h1-letterspacing-m4px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1),
+.h2-letterspacing-m4px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h2),
+.h3-letterspacing-m4px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h3),
+.h4-letterspacing-m4px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h4),
+.h5-letterspacing-m4px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h5),
+.h6-letterspacing-m4px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h6) {
+    letter-spacing: -4px;
+}
+
+.hx-letterspacing-m5px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1,
+.markdown-source-view .HyperMD-header-2 .cm-header, .markdown-rendered h2,
+.markdown-source-view .HyperMD-header-3 .cm-header, .markdown-rendered h3,
+.markdown-source-view .HyperMD-header-4 .cm-header, .markdown-rendered h4,
+.markdown-source-view .HyperMD-header-5 .cm-header, .markdown-rendered h5,
+.markdown-source-view .HyperMD-header-6 .cm-header, .markdown-rendered h6),
+.h1-letterspacing-m5px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h1),
+.h2-letterspacing-m5px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h2),
+.h3-letterspacing-m5px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h3),
+.h4-letterspacing-m5px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h4),
+.h5-letterspacing-m5px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h5),
+.h6-letterspacing-m5px :is(
+.markdown-source-view .HyperMD-header-1 .cm-header, .markdown-rendered h6) {
+    letter-spacing: -5px;
+}
+
+/* ---------------------------------- END OF DOCUMENT ---------------------------------- */
