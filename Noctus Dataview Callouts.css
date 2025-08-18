@@ -1,11 +1,13 @@
-
 /* Info 
-Font Snippet by Shaydelity
+DV Callout Snippet by Shaydelity
 Github: https://github.com/Shaydelity
-Contact: shaydedg@gmail.com
+Contact: shaydelity@gmail.com
 ------------------------------------
-- Part of the Modular Snippets
+- Part of the Modular Snippets -
 -----------------------------------*/
+
+
+/* All dw-metadata selectors are only there because I had that typo from the beginning and changed it later to dv-metadata */
 
 /* REMADE STANDARDS */
 
@@ -21,7 +23,7 @@ p.dw-up::before {
 
 /* General Dataview Metadata Callout */
 
-.callout[data-callout*="dw-metadata"] {
+.callout:is([data-callout*="dw-metadata"], [data-callout*="dv-metadata"]) {
     --callout-border-width: 10px;
     --callout-border-opacity: 1;
     --callout-title-size: 1em;
@@ -70,10 +72,15 @@ p.dw-up::before {
 }
 
 @media print {
-    div[data-callout*="dw-metadata"].callout {
+    div:is([data-callout*="dw-metadata"], [data-callout*="dv-metadata"]).callout {
         display: none;
     }
 }
+
+.slides-container .callout:is([data-callout*="dw-metadata"], [data-callout*="dv-metadata"]) {
+    display: none;
+}
+
 
 /*
 overflow: hidden;
@@ -117,7 +124,7 @@ align-items: flex-start;
 
 /* Special DW Metadata Callouts */
 
-.callout[data-callout*="dw-metadata-top"] > .callout-content {
+.callout:is([data-callout*="dw-metadata-top"], [data-callout*="dv-metadata-top"]) > .callout-content {
     border-top: solid oklch(var(--white) 0 0 / 0.5);
     padding-top: 10px;
 }
@@ -188,12 +195,12 @@ align-items: flex-start;
 
 
 
-div[data-callout*="dw-metadata-next"].callout > .callout-title .callout-icon { display: none; }
+div:is([data-callout*="dw-metadata-next"], [data-callout*="dv-metadata-next"]).callout > .callout-title .callout-icon { display: none; }
 
 div[data-callout*="dw-metadata-next"].callout > .callout-title .callout-title-inner { display: none; }
 
 
-.callout[data-callout*="dw-metadata-next"] {
+.callout:is([data-callout*="dw-metadata-next"], [data-callout*="dv-metadata-next"]) {
     --callout-color: var(--dark-grey);
     justify-content: center;
     border: none;
@@ -210,13 +217,13 @@ div[data-callout="next"].callout > .callout-title .callout-icon {
 
 /* Dataview Property: Previous Callout */
 
-div[data-callout="dw-metadata-previous"].callout > .callout-title {margin:0em; padding:0em; background-color: rgba(0,0,0,0);}
+div:is([data-callout*="dw-metadata-previous"], [data-callout*="dv-metadata-previous"]).callout > .callout-title {margin:0em; padding:0em; background-color: rgba(0,0,0,0);}
 
-div[data-callout="dw-metadata-previous"].callout > .callout-title .callout-icon { margin-right: -0.1em; margin-bottom: -0.1em;}
+div:is([data-callout*="dw-metadata-previous"], [data-callout*="dv-metadata-previous"]).callout > .callout-title .callout-icon { margin-right: -0.1em; margin-bottom: -0.1em;}
 
-div[data-callout="dw-metadata-previous"].callout > .callout-title .callout-icon { display: flex; }
+div:is([data-callout*="dw-metadata-previous"], [data-callout*="dv-metadata-previous"]).callout > .callout-title .callout-icon { display: flex; }
 
-div[data-callout="dw-metadata-previous"].callout { --callout-icon: lucide-chevrons-left; }
+div:is([data-callout*="dw-metadata-previous"], [data-callout*="dv-metadata-previous"]).callout { --callout-icon: lucide-chevrons-left; }
 
 div[data-callout="next"].callout { --callout-icon: lucide-chevrons-right; }
 
